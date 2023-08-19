@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank transcition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="bg-sky-200 ">
+    <header></header>
+    <main >
+        <h3 class="text-5xl text-center p-10"> Your Transiction information</h3>
+        <section class="p-8 md:container mx-auto ">
+            <div class="grid grid-cols-3 gap-4 mx-auto w-9/12">
+                <div class="bg-green-400 p-8 text-white rounded-xl">
+                    <h2 class="text-3xl">Deposite</h2>
+                    <h3 class="text-5xl"> $<span id="depo-total">00</span></h3>
+                </div>
+                <div class="bg-pink-300 p-8 text-white rounded-xl">
+                    <h2 class="text-3xl">Withdraw</h2>
+                    <h3 class="text-5xl">$<span id="withdraw-total">00</span></h3>
+                </div>
+                <div class="bg-rose-400 p-8 text-white rounded-xl">
+                    <h2 class="text-3xl">Balance</h2>
+                    <h3 class="text-5xl">$  <span id="total-balance">100</span> </h3>
+                </div>
+            </div>
+        </section>
+        <section class="p-8 md:container mx-auto ">
+            <div class="grid grid-cols-2 gap-4 mx-auto w-9/12">
+                <div class="bg-purple-600 p-8 text-white rounded-xl">
+                    <h2 class="text-3xl text-white">Please Deposite</h2>
+                    <input class=" w-9/12 mt-6 mb-6 h-10 rounded-md text-center text-black" type="text" name="" id="deposite_field"
+                        placeholder="$ ammount you want to deposite"> <br>
+                    <button id="btn-deposite" class="btn btn-active btn-neutral w-1/4 h-10 ">Deposite</button>
+                </div>
+                <div class="bg-fuchsia-600 p-8 text-white rounded-xl">
+                    <h2 class="text-3xl">Please Withdraw</h2>
+                    <input class=" w-9/12 mt-6 mb-6 h-10 text-black rounded-md text-center" type="text" name="" id="withdraw_field"
+                        placeholder="$ ammount you want to deposite"> <br>
+                    <button id="btn-withdraw" class="btn btn-active btn-neutral w-1/4 h-10 ">Withdraw</button>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <script src="./JS files/deposite.js"></script>
+    <script src="./JS files/withdraw.js"></script>
+</body>
+
+</html>
